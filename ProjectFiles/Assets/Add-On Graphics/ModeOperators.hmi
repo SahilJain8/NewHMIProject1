@@ -1,0 +1,511 @@
+namespace ViewDesigner::AOG;
+
+using HMICatalog;
+
+/* HMI Device Type: 15" PanelView 5510 2715P-T15CD */
+
+AddOnGraphic ModeOperators {
+	Description := "";
+	Vendor := "";
+	Major := 1;
+	Minor := 0;
+	Extended := "";
+	Note := "";
+	Width := 174.97;
+	Height := 337.05;
+	TerminalWidth := 1024;
+	TerminalHeight := 768;
+	PanelDeviceGroup Group_010 {
+		Button Button_CONTROL_POWER_ON_001 {
+			FillColor := "#f89800";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "CONTROL POWER ON";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 0;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_AUTO_MODE_001 {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "AUTO MODE";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 98.28;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_RESET_001 {
+			FillColor := "#f89800";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "RESET";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 198.1;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_CYCLE_STOPPING_001 {
+			FillColor := "#f89800";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "CYCLE STOPPING";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 297.93;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_SAFETY_RESET_001 {
+			FillColor := "#f89800";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "SAFETY RESET";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 397.76;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ALARM_HISTORY_001 {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "ALARM HISTORY";
+			UsePredefinedDisabled := true;
+			BehaviorNavigateToScreen BehaviorNavigateToScreen_001 {
+				screenName := "User-Defined Screens\OPERATION\OPERATION_VIAL_PRE_INSPECT";
+				Key := EnumBezelKeys.VK_NONE;
+				RequiresFocus := false;
+				AlwaysTriggerReleaseEvent := false;
+			}
+			X := 0;
+			Y := 497.58;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_CYCLE_START {
+			FillColor := "#f89800";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "CYCLE START";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 198.1;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_MASTER_RESET {
+			FillColor := "#f89800";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "MASTER RESET";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 297.93;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_MANUAL_MODE {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "MANUAL MODE";
+			UsePredefinedDisabled := true;
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "MANUAL MODE",
+					FillColor := "#0e86ff",
+					^visible := "true")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "AUTO MODE",
+					FillColor := "#c7b298",
+					^visible := "False")
+				{
+					value := "1";
+				}
+				State State2 (
+					Text := "ERROR",
+					FillColor := "#000080",
+					^visible := "true")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "MANUAL MODE",
+					FillColor := "#0e86ff",
+					^visible := "true")
+				{
+				}
+			}
+			X := 0;
+			Y := 98.28;
+			Width := 121.53;
+			Height := 86.81;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		X := 104.97;
+		Y := 0;
+		Width := 70;
+		Height := 336.61;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+	PanelDeviceGroup Group_001 {
+		Button Button_CONTROL_POWER_ON {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "CONTROL POWER ON";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 0;
+			Width := 70;
+			Height := 50;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_AUTO_MODE {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "AUTO MODE";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 57.5;
+			Width := 70;
+			Height := 50;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_RESET {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "RESET";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 115;
+			Width := 70;
+			Height := 50;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_CYCLE_STOPPING {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "CYCLE STOPPING";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 172.5;
+			Width := 70;
+			Height := 50;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_SAFETY_RESET {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "SAFETY RESET";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 229.14;
+			Width := 70;
+			Height := 50;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ALARM_HISTORY {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "ALARM HISTORY";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 286.64;
+			Width := 70;
+			Height := 50;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		X := 0;
+		Y := 0.42;
+		Width := 70;
+		Height := 336.64;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+}

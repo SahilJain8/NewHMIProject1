@@ -1,0 +1,263 @@
+namespace ViewDesigner::AOG;
+
+using HMICatalog;
+
+/* HMI Device Type: 15" PanelView 5510 2715P-T15CD */
+
+AddOnGraphic ROBOT_COMMANDS {
+	Description := "";
+	Vendor := "";
+	Major := 1;
+	Minor := 0;
+	Extended := "";
+	Note := "";
+	Width := 129;
+	Height := 180;
+	TerminalWidth := 1024;
+	TerminalHeight := 768;
+	PanelDeviceGroup Group_001 {
+		Button Button_ROBOT_RESET {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "RESET";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 19.5;
+			Width := 60;
+			Height := 33;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ROBOT_HOLD {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "HOLD";
+			UsePredefinedDisabled := true;
+			X := 67.5;
+			Y := 19.5;
+			Width := 60;
+			Height := 33;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ROBOT_START {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "START";
+			UsePredefinedDisabled := true;
+			X := 0;
+			Y := 60.5;
+			Width := 60;
+			Height := 33;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ROBOT_IM_STOP {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "IM STOP";
+			UsePredefinedDisabled := true;
+			X := 67.5;
+			Y := 60.5;
+			Width := 60;
+			Height := 33;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ROBOT_ABORT {
+			FillColor := "#c7b298";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "ABORT";
+			UsePredefinedDisabled := true;
+			X := 34.25;
+			Y := 101;
+			Width := 60;
+			Height := 33;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		Button Button_ROBOT_HOLD_001 {
+			FillColor := "#0e86ff";
+			Border {
+				Color := "#262324";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			CornerRadius := 3;
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			FontName := "Arial Unicode MS";
+			FontSize := 12;
+			FontColor := "#000000";
+			Bold := true;
+			Text := "NNN";
+			UsePredefinedDisabled := true;
+			X := 0.5;
+			Y := 160;
+			Width := 127.5;
+			Height := 20;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_001 {
+			Text := "CURRENT PNS PROGRAM";
+			FontName := "Arial Unicode MS";
+			FontSize := 10;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.NoPen;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 1;
+			}
+			FillColor := "#00000000";
+			X := 0;
+			Y := 141.5;
+			Width := 129;
+			Height := 18.5;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_002 {
+			Text := "ROBOT COMMANDS";
+			FontName := "Arial Unicode MS";
+			FontSize := 10;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.NoPen;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 1;
+			}
+			FillColor := "#00000000";
+			X := 0;
+			Y := 0;
+			Width := 127.5;
+			Height := 19.5;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		X := 0;
+		Y := 0;
+		Width := 129;
+		Height := 180;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+}

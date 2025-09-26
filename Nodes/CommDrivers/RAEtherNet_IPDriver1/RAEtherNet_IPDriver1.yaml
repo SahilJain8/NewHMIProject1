@@ -1,0 +1,8 @@
+Name: RAEtherNet_IPDriver1
+Type: RAEtherNetIPDriver
+Children:
+- Name: AllowRuntimeTagImport
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- File: RAEtherNet_IPStation1/RAEtherNet_IPStation1.yaml

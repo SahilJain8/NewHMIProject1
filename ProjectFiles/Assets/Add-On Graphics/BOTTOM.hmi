@@ -1,0 +1,725 @@
+namespace ViewDesigner::AOG;
+
+using HMICatalog;
+
+/* HMI Device Type: 15" PanelView 5510 2715P-T15CD */
+
+AddOnGraphic BOTTOM {
+	Description := "";
+	Vendor := "";
+	Major := 1;
+	Minor := 0;
+	Extended := "";
+	Note := "";
+	Width := 756.33;
+	Height := 57.79;
+	TerminalWidth := 1024;
+	TerminalHeight := 768;
+	Rectangle Rectangle_002 {
+		CornerRadius := 0;
+		Border {
+			Color := "#000000";
+			BorderStyle {
+				Line := PenStyle.SolidLine;
+				Cap := CapStyle.SquareCap;
+				Join := JoinStyle.MiterJoin;
+			}
+			Width := 0;
+		}
+		FillColor := "#00000000";
+		X := 463.14;
+		Y := 39.04;
+		Width := 260;
+		Height := 18.75;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+	Image Image_001 {
+		ImageName := "APTFanuc_Logo";
+		X := 333.63;
+		Y := 11.53;
+		Width := 129.5;
+		Height := 46.26;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+	PanelDeviceGroup Group_002 {
+		TextDisplay TextDisplay_012 {
+			Text := "AT Perch";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			FillColor := "#00ff00";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "AT Perch",
+					fillcolor := "#808080",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "AT Perch",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "AT Perch",
+					fillcolor := "#00ff00",
+					Width := "79")
+				{
+				}
+			}
+			X := 158;
+			Y := 23;
+			Width := 79;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_011 {
+			Text := "TP Enabled";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			FillColor := "#ff0000";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "TP Enabled",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "TP Enabled",
+					fillcolor := "#ff0000",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "TP Enabled",
+					fillcolor := "#ff0000",
+					Width := "79")
+				{
+				}
+			}
+			X := 79;
+			Y := 23;
+			Width := 79;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_009 {
+			Text := "Running";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			FillColor := "#00ff00";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "Running",
+					fillcolor := "#808080",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "Running",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "Running",
+					fillcolor := "#00ff00",
+					Width := "79")
+				{
+				}
+			}
+			X := 79;
+			Y := 0;
+			Width := 79;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_007 {
+			Text := "Busy";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			FillColor := "#808080";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "Busy",
+					fillcolor := "#808080",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "Busy",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "Busy",
+					fillcolor := "#808080",
+					Width := "79")
+				{
+				}
+			}
+			X := 0;
+			Y := 0;
+			Width := 79;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_010 {
+			Text := "Hold";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			FillColor := "#ff0000";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "Hold",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "Hold",
+					fillcolor := "#ff0000",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "Hold",
+					fillcolor := "#ff0000",
+					Width := "79")
+				{
+				}
+			}
+			X := 158;
+			Y := 0;
+			Width := 79;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_008 {
+			Text := "Battery";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 2;
+			}
+			FillColor := "#ff0000";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "Battery",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "Battery",
+					fillcolor := "#ff0000",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "Battery",
+					fillcolor := "#ff0000",
+					Width := "79")
+				{
+				}
+			}
+			X := 0;
+			Y := 23;
+			Width := 79;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		NumericDisplay NumericDisplay_001 {
+			DigitsBeforeDecimal := 3;
+			DigitsAfterDecimal := 0;
+			LeadingZero := false;
+			TrailingZeros := false;
+			Rounding := EnumNumericRounding.Nearest;
+			LeadingZerosFill := false;
+			Value := 0 -> "{{empty";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 1;
+			}
+			FillColor := "#ff0000";
+			ColorStateTable ColorTable_001 {
+				Expression := "";
+				State State0 (
+					fillcolor := "#ff0000")
+				{
+					value := "0";
+				}
+				State State1 (
+					fillcolor := "#fff200")
+				{
+					value := "1";
+				}
+				State State2 (
+					fillcolor := "#00ff00")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					fillcolor := "#ff0000")
+				{
+				}
+			}
+			X := 237;
+			Y := 23.5;
+			Width := 56.9;
+			Height := 22.4;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		TextDisplay TextDisplay_013 {
+			Text := "Fault";
+			FontName := "Arial Unicode MS";
+			FontSize := 14;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HCENTER_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.SolidLine;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 5;
+			}
+			FillColor := "#ff0000";
+			StateTable StateTable_001 {
+				Expression := "";
+				State State0 (
+					Text := "Fault",
+					fillcolor := "#00ff00",
+					Width := "57")
+				{
+					value := "0";
+				}
+				State State1 (
+					Text := "Fault",
+					fillcolor := "#ff0000",
+					Width := "57")
+				{
+					value := "1";
+				}
+				State ERROR (
+					Text := "ERROR",
+					fillcolor := "#000080",
+					Width := "57")
+				{
+					value := "2";
+				}
+				State DefaultState (
+					Text := "Fault",
+					fillcolor := "#ff0000",
+					Width := "57")
+				{
+				}
+			}
+			X := 236.95;
+			Y := 0;
+			Width := 57;
+			Height := 23;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		X := 462.38;
+		Y := 11.53;
+		Width := 293.95;
+		Height := 46;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+	PanelDeviceGroup Group_003 {
+		TextDisplay Prog_Stat {
+			Text := "Prog Stat";
+			FontName := "Arial Unicode MS";
+			FontSize := 8;
+			Bold := true;
+			Underline := false;
+			FontColor := "#000000";
+			TextAlignment := EnumAlignment.HLEFT_VCENTER;
+			Padding := 0;
+			CornerRadius := 0;
+			Border {
+				Color := "#000000";
+				BorderStyle {
+					Line := PenStyle.NoPen;
+					Cap := CapStyle.SquareCap;
+					Join := JoinStyle.MiterJoin;
+				}
+				Width := 1;
+			}
+			FillColor := "#00000000";
+			X := 0;
+			Y := 0;
+			Width := 335.87;
+			Height := 13;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		PanelDeviceGroup Group_001 {
+			Rectangle Rectangle_004 {
+				CornerRadius := 0;
+				Border {
+					Color := "#000000";
+					BorderStyle {
+						Line := PenStyle.SolidLine;
+						Cap := CapStyle.SquareCap;
+						Join := JoinStyle.MiterJoin;
+					}
+					Width := 0;
+				}
+				FillColor := "#f3da0b";
+				X := 0;
+				Y := 0;
+				Width := 335.87;
+				Height := 45.75;
+				Angle := 0;
+				Enabled := true;
+				^Visible := true;
+				Opacity := 100;
+				Access := EnumElementAccessFamily.Inherit;
+			}
+			TextDisplay TextDisplay_038 {
+				Text := "Current Robot Alarm";
+				FontName := "Arial Unicode MS";
+				FontSize := 10;
+				Bold := true;
+				Underline := false;
+				FontColor := "#000000";
+				TextAlignment := EnumAlignment.HCENTER_VCENTER;
+				Padding := 0;
+				CornerRadius := 0;
+				Border {
+					Color := "#ffffff";
+					BorderStyle {
+						Line := PenStyle.SolidLine;
+						Cap := CapStyle.SquareCap;
+						Join := JoinStyle.MiterJoin;
+					}
+					Width := 0;
+				}
+				FillColor := "#00000000";
+				X := 0;
+				Y := 0;
+				Width := 335.5;
+				Height := 15.5;
+				Angle := 0;
+				Enabled := true;
+				^Visible := true;
+				Opacity := 100;
+				Access := EnumElementAccessFamily.Inherit;
+			}
+			LineElement LineElement_002 {
+				vectorpath := "M0,0L335.52,0";
+				Border {
+					Color := "#000000";
+					BorderStyle {
+						Line := PenStyle.SolidLine;
+						Cap := CapStyle.SquareCap;
+						Join := JoinStyle.MiterJoin;
+					}
+					Width := 1;
+				}
+				X := 0;
+				Y := 15;
+				Width := 335.52;
+				Height := 0.58;
+				Angle := 0;
+				Enabled := true;
+				^Visible := true;
+				Opacity := 100;
+				Access := EnumElementAccessFamily.Inherit;
+			}
+			TextDisplay Robot_Last_Alarm {
+				Text := "NO Robot Alarm";
+				FontName := "Arial Unicode MS";
+				FontSize := 10;
+				Bold := true;
+				Underline := false;
+				FontColor := "#000000";
+				TextAlignment := EnumAlignment.HCENTER_VCENTER;
+				Padding := 0;
+				CornerRadius := 0;
+				Border {
+					Color := "#ffffff";
+					BorderStyle {
+						Line := PenStyle.SolidLine;
+						Cap := CapStyle.SquareCap;
+						Join := JoinStyle.MiterJoin;
+					}
+					Width := 0;
+				}
+				FillColor := "#00000000";
+				X := 0;
+				Y := 15.42;
+				Width := 335.87;
+				Height := 14.4;
+				Angle := 0;
+				Enabled := true;
+				^Visible := true;
+				Opacity := 100;
+				Access := EnumElementAccessFamily.Inherit;
+			}
+			TextDisplay User_Alarm {
+				Text := "NO User Alarm";
+				FontName := "Arial Unicode MS";
+				FontSize := 10;
+				Bold := true;
+				Underline := false;
+				FontColor := "#000000";
+				TextAlignment := EnumAlignment.HCENTER_VCENTER;
+				Padding := 0;
+				CornerRadius := 0;
+				Border {
+					Color := "#ffffff";
+					BorderStyle {
+						Line := PenStyle.SolidLine;
+						Cap := CapStyle.SquareCap;
+						Join := JoinStyle.MiterJoin;
+					}
+					Width := 0;
+				}
+				FillColor := "#00000000";
+				X := 0;
+				Y := 29.9;
+				Width := 335.87;
+				Height := 14.4;
+				Angle := 0;
+				Enabled := true;
+				^Visible := true;
+				Opacity := 100;
+				Access := EnumElementAccessFamily.Inherit;
+			}
+			X := 0;
+			Y := 12.04;
+			Width := 335.87;
+			Height := 45.75;
+			Angle := 0;
+			Enabled := true;
+			^Visible := true;
+			Opacity := 100;
+			Access := EnumElementAccessFamily.Inherit;
+		}
+		X := 0;
+		Y := 0;
+		Width := 335.87;
+		Height := 57.79;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+}

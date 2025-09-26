@@ -1,0 +1,10 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: RAEtherNet_IPTag1
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String

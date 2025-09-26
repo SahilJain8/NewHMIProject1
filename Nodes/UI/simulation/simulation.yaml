@@ -1,0 +1,14 @@
+Name: simulation
+Type: FolderType
+Children:
+- Name: RuntimeNetLogic1
+  Type: NetLogic
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Name: MachineSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 234

@@ -1,0 +1,9 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: MachineSpeed
+  Type: BaseDataVariableType
+  DataType: Int16

@@ -1,0 +1,48 @@
+namespace ViewDesigner::AOG;
+
+using HMICatalog;
+
+/* HMI Device Type: 15" PanelView 5510 2715P-T15CD */
+
+AddOnGraphic Auto_Sequence_message_bar {
+	Description := "";
+	Vendor := "";
+	Major := 1;
+	Minor := 0;
+	Extended := "";
+	Note := "";
+	Width := 75;
+	Height := 15;
+	TerminalWidth := 1024;
+	TerminalHeight := 768;
+	TextDisplay TextDisplay_001 {
+		Text := "Auto Sequence";
+		FontName := "Arial Unicode MS";
+		FontSize := 10;
+		Bold := true;
+		Underline := false;
+		FontColor := "#000000";
+		TextAlignment := EnumAlignment.HCENTER_VCENTER;
+		Padding := 0;
+		CornerRadius := 0;
+		Border {
+			Color := "#000000";
+			BorderStyle {
+				Line := PenStyle.NoPen;
+				Cap := CapStyle.SquareCap;
+				Join := JoinStyle.MiterJoin;
+			}
+			Width := 1;
+		}
+		FillColor := "#00000000";
+		X := 0;
+		Y := 0;
+		Width := 75;
+		Height := 15;
+		Angle := 0;
+		Enabled := true;
+		^Visible := true;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+}

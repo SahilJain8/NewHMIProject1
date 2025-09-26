@@ -1,0 +1,65 @@
+namespace ViewDesigner::AOG;
+
+using HMICatalog;
+
+/* HMI Device Type: 15" PanelView 5510 2715P-T15CD */
+
+AddOnGraphic FAULTS_message_bar {
+	Description := "";
+	Vendor := "";
+	Major := 1;
+	Minor := 0;
+	Extended := "";
+	Note := "";
+	Width := 35;
+	Height := 15;
+	TerminalWidth := 1024;
+	TerminalHeight := 768;
+	TextDisplay TextDisplay_001 {
+		Text := "FAULT";
+		FontName := "Arial Unicode MS";
+		FontSize := 10;
+		Bold := true;
+		Underline := false;
+		FontColor := "#000000";
+		TextAlignment := EnumAlignment.HCENTER_VCENTER;
+		Padding := 0;
+		CornerRadius := 0;
+		Border {
+			Color := "#000000";
+			BorderStyle {
+				Line := PenStyle.NoPen;
+				Cap := CapStyle.SquareCap;
+				Join := JoinStyle.MiterJoin;
+			}
+			Width := 1;
+		}
+		FillColor := "#ffffff";
+		StateTable StateTable_001 {
+			Expression := "";
+			State State0 (
+				^visible := "False")
+			{
+				value := "0";
+			}
+			State State1 (
+				^visible := "true")
+			{
+				value := "1";
+			}
+			State DefaultState (
+				^visible := "false")
+			{
+			}
+		}
+		X := 0;
+		Y := 0;
+		Width := 35;
+		Height := 15;
+		Angle := 0;
+		Enabled := true;
+		^Visible := false;
+		Opacity := 100;
+		Access := EnumElementAccessFamily.Inherit;
+	}
+}
