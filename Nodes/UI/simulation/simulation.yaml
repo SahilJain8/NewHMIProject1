@@ -1,14 +1,56 @@
 Name: simulation
 Type: FolderType
 Children:
-- Name: RuntimeNetLogic1
+- Name: Robotinfo
   Type: NetLogic
   Children:
-  - Name: Variable1
+  - Name: velocity
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 100
-  - Name: MachineSpeed
+    DataType: Float
+  - Name: airtemperature
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 234
+    DataType: Float
+  - Name: processtemperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: rotationalspeed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: torque
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: toolwear
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Load
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ProductType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: Logs
+  Type: NetLogic
+  Children:
+  - Name: Auto Mode
+    Id: g=0e7059f9ba49477fc50b9725395ccaf9
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Cycle Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Cycle Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Safety Reset
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Calibration
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Alarm History
+    Type: BaseDataVariableType
+    DataType: Boolean

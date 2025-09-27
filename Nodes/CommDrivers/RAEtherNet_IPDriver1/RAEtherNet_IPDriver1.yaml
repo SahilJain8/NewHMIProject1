@@ -5,4 +5,4 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: true
-- File: RAEtherNet_IPStation1/RAEtherNet_IPStation1.yaml
+- File: Robot_PLC/Robot_PLC.yaml

@@ -26,15 +26,54 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
+        - Name: productid
+          Type: StoreColumn
+          DataType: String
+        - Name: airtemperature
+          Type: StoreColumn
+          DataType: Float
+        - Name: 'processtemperature '
+          Type: StoreColumn
+          DataType: Float
+        - Name: rotationalspeed
+          Type: StoreColumn
+          DataType: Float
+        - Name: 'torque '
+          Type: StoreColumn
+          DataType: Float
+        - Name: toolwear
+          Type: StoreColumn
+          DataType: Float
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: DataLogger2
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
           DataType: DateTime
-        - Name: VariableToSample1
+        - Name: Auto Mode
           Type: StoreColumn
-          DataType: Int32
+          DataType: Boolean
   - Name: Type
     Type: PropertyType
     DataType: DBMSType

@@ -1,11 +1,10 @@
-Name: RAEtherNet_IPStation1
-Id: g=32effac565ac43b37ca46ea7aaa57438
+Name: Robot_PLC
+Id: g=fcd1c7dea8a2090de89679cb688f4e51
 Type: RAEtherNetIPStation
 Children:
 - Name: Route
   Type: BaseDataVariableType
   DataType: String
-  Value: "192.168.1.11"
 - Name: StationStatusVariables
   Type: PropertyGroup
   Children:
@@ -121,6 +120,25 @@ Children:
   Children:
   - File: DataTypes/DataTypes.yaml
   - File: VariableTypes/VariableTypes.yaml
-- Name: PLC_Connected
+- Name: isConnected
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: RobotSpeed
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../UI/simulation/Robotinfo/velocity"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: RobotBusy
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: RobotFaulty
   Type: BaseDataVariableType
   DataType: Boolean

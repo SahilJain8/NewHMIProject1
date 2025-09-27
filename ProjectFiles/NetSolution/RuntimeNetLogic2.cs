@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.CommunicationDriver;
+using FTOptix.EventLogger;
 #endregion
 
 public class RuntimeNetLogic2 : BaseNetLogic
@@ -14,13 +15,16 @@ public class RuntimeNetLogic2 : BaseNetLogic
     private IUAVariable _velocity;
     private IUAVariable _acc;
     private IUAVariable _isActive;   // <-- keep as a variable
-    private bool _led;               // <-- field that mirrors _isActive.Value
+    private bool _led;
+    // <-- field that mirrors _isActive.Value
+    private IUAVariable temp;
 
     public override void Start()
     {
         _velocity = LogicObject.GetVariable("velocity");
         _acc = LogicObject.GetVariable("acc");
         _isActive = LogicObject.GetVariable("isactive");
+        temp = LogicObject.GetVariable("Variable2");
 
         if (_velocity == null) throw new InvalidOperationException("Variable 'velocity' not found.");
         if (_acc == null) throw new InvalidOperationException("Variable 'acc' not found.");
@@ -31,6 +35,8 @@ public class RuntimeNetLogic2 : BaseNetLogic
 
         // if you want to start based on current state:
         if (_led) StartRandomizer();
+        
+        
     }
 
     public override void Stop()
@@ -93,4 +99,6 @@ public class RuntimeNetLogic2 : BaseNetLogic
             _worker = null;
         }
     }
+
+   
 }
