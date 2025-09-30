@@ -232,11 +232,11 @@ Children:
   - Name: Width
     Type: BaseDataVariableType
     DataType: Size
-    Value: 2190.0
+    Value: 1920.0
   - Name: Height
     Type: BaseDataVariableType
     DataType: Size
-    Value: 1920.0
+    Value: 1080.0
   - Name: Caption
     Type: BaseDataVariableType
     DataType: String
@@ -334,7 +334,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NewHMIProject1/UI/Screens/Screen5"
+          Value: "/Objects/NewHMIProject1/UI/Screens/Screen1"
           Children:
           - Name: Kind
             Type: PropertyType
