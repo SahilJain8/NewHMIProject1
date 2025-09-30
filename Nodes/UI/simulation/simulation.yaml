@@ -36,7 +36,6 @@ Children:
   Type: NetLogic
   Children:
   - Name: Auto Mode
-    Id: g=0e7059f9ba49477fc50b9725395ccaf9
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: Cycle Start

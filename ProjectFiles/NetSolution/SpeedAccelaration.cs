@@ -1,14 +1,22 @@
 #region Using directives
+using FTOptix.Core;
+using FTOptix.CoreBase;
+using FTOptix.HMIProject;
+using FTOptix.NativeUI;
+using FTOptix.NetLogic;
+using FTOptix.Retentivity;
+using FTOptix.UI;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using UAManagedCore;
-using FTOptix.NetLogic;
-using FTOptix.CommunicationDriver;
-using FTOptix.EventLogger;
+using FTOptix.ODBCStore;
+using FTOptix.Store;
+using FTOptix.DataLogger;
+using OpcUa = UAManagedCore.OpcUa;
 #endregion
 
-public class RuntimeNetLogic2 : BaseNetLogic
+public class SpeedAccelaration : BaseNetLogic
 {
     private CancellationTokenSource _cts;
     private Task _worker;
@@ -18,25 +26,28 @@ public class RuntimeNetLogic2 : BaseNetLogic
     private bool _led;
     // <-- field that mirrors _isActive.Value
     private IUAVariable temp;
+    private IUAVariable log1;
+    private IUAVariable log3;
+    private IUAVariable log2;
+    private IUAVariable log4;
 
     public override void Start()
     {
         _velocity = LogicObject.GetVariable("velocity");
         _acc = LogicObject.GetVariable("acc");
-        _isActive = LogicObject.GetVariable("isactive");
+        _isActive = LogicObject.GetVariable("PowerON");
         temp = LogicObject.GetVariable("Variable2");
 
         if (_velocity == null) throw new InvalidOperationException("Variable 'velocity' not found.");
         if (_acc == null) throw new InvalidOperationException("Variable 'acc' not found.");
         if (_isActive == null) throw new InvalidOperationException("Variable 'isactive' not found.");
 
-        // read once (use Convert.ToBoolean because .Value is a Variant)
-        _led = (Boolean) _isActive.Value ;
+      
+        _led = (Boolean)_isActive.Value;
 
-        // if you want to start based on current state:
         if (_led) StartRandomizer();
-        
-        
+
+
     }
 
     public override void Stop()
@@ -56,11 +67,11 @@ public class RuntimeNetLogic2 : BaseNetLogic
     public void StartRandomizer()
     {
         // Always re-read the LED state at call time
-        _isActive = LogicObject.GetVariable("isactive");
+        _isActive = LogicObject.GetVariable("PowerON");
         _led = (Boolean)_isActive.Value;
         Log.Info($"LED active: {_led}");
 
-        if (!_led) return;
+        if (!_led) StopRandomizerAndZero();
 
         if (_cts != null)
             StopRandomizer();
@@ -100,5 +111,26 @@ public class RuntimeNetLogic2 : BaseNetLogic
         }
     }
 
-   
+    [ExportMethod]
+    public void Logs()
+    {
+       
+        
+
+        log1 = LogicObject.GetVariable("log1");
+        log3 = LogicObject.GetVariable("log3");
+        log2 = LogicObject.GetVariable("log2");
+        log4 = LogicObject.GetVariable("log4");
+
+
+        log4.Value = log3.Value;
+        log3.Value = log2.Value;
+        log2.Value = "log at" + " " + DateTime.Now.ToString() +" " + "is" + " " +  log1.Value; 
+
+
+
+        // Insert code to be executed by the method
+    }
 }
+
+
