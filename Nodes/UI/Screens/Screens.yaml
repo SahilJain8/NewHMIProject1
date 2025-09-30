@@ -5012,12 +5012,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 10.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 730.0
+      Value: 570.0
     - Name: Label1
       Type: Label
       Children:
@@ -5167,12 +5167,22 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 1080.0
+    Value: 1160.0
   - Name: Width
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 1920.0
+    Value: -1.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
 - Name: Screen2
   Id: g=f885950c07e944a1ddcc4f548f03ab2f
   Supertype: Screen
